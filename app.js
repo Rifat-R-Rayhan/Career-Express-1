@@ -14,7 +14,7 @@ db.on('error', ()=> {
 });
 db.once('open', ()=>{
     console.log("Database connection established.");
-})
+});
 
 app.set("view engine", "ejs");
 
@@ -29,6 +29,8 @@ app.use('/registration', myRouter);
 app.use('/adminlogin', myRouter);
 app.use('/userlogin', myRouter);
 app.use('/userinfo', myRouter);
+app.use('/dashboard', myRouter);
+app.use('/trainingpost', myRouter);
 
 app.listen(port,(err)=> {
     if(!err){
@@ -37,4 +39,4 @@ app.listen(port,(err)=> {
     else{
         console("Error! Server down.");
     }
-})
+});

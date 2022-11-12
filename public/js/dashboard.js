@@ -27,7 +27,6 @@ dashBtn.addEventListener("click",function(){
         def2.style.display="none";
         def3.style.display="none";
     }
-   
 
 
 });
